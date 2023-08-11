@@ -8,29 +8,22 @@
 int main(void)
 {
 int i = '0';
-int j = '0';
+int j;
 
 while (i <= '9')
 {
+j = i + 1; // Start from the next digit after i
 while (j <= '9')
-{
-if (!(i > j) || i == j)
 {
 putchar(i);
 putchar(j);
-if (i == '8' && j == '9')
-{
-break;
-}
-else
+if (!(i == '8' && j == '9'))
 {
 putchar(',');
 putchar(' ');
 }
-}
 j++;
 }
-j = '0';
 i++;
 }
 
