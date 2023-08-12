@@ -1,39 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible different combinations of two digits.
+ * main - Prints all possible combinations of single-digit numbers
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i = '0';
-int j = '0';
+int n;
 
-while (i <= '9')
+for (n = 48; n < 58; n++)
 {
-while (j <= '9')
-{
-if (!(i > j) || i == j)
-{
-putchar(i);
-putchar(j);
-if (i == '8' && j == '9')
-{
-break;
-}
-else
+putchar(n);
+if (n != 57)
 {
 putchar(',');
 putchar(' ');
 }
 }
-j++;
-}
-j = '0';
-i++;
-}
-
 putchar('\n');
 return (0);
 }
