@@ -49,7 +49,7 @@ This task requires that you create four different files.
 3-calc.h
 
 This file should contain all the function prototypes and data structures used by the program. You can use this structure:
- 
+
 3-op_functions.c
 
 This file should contain the 5 following functions (not more):
