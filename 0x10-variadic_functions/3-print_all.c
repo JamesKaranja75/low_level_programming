@@ -1,7 +1,8 @@
 #include "variadic_functions.h"
+
 /**
  * print_all - prints anything
- * @format: List of types of arguments paased to the function
+ * @format: List of types of arguments passed to the function
  */
 void print_all(const char * const format, ...)
 {
@@ -41,4 +42,6 @@ sep = ", ";
 i++;
 }
 }
+printf("\n");
+va_end(list);
 }
